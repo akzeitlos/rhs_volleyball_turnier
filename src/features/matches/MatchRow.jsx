@@ -3,6 +3,7 @@ import Badge from "../../components/ui/Badge/Badge";
 import Button from "../../components/ui/Button/Button";
 import Input from "../../components/form/Input/Input";
 import Label from "../../components/form/Label/Label";
+import TrashIcon from "../../components/icons/TrashIcon";
 import { clampInt } from "../../lib/utils";
 
 export default function MatchRow({ match, teamsById, allowDraw, onChange, disabled }) {
@@ -69,12 +70,12 @@ export default function MatchRow({ match, teamsById, allowDraw, onChange, disabl
         </div>
 
         <Button
-          variant="ghost"
+          variant="danger"
           className="ml-auto"
           disabled={disabled || (match.pointsA == null && match.pointsB == null)}
           onClick={() => onChange({ ...match, pointsA: null, pointsB: null })}
         >
-          löschen
+        <TrashIcon className="h-5 w-5" />
         </Button>
       </div>
 

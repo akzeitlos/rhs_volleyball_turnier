@@ -8,8 +8,6 @@ import Separator from "../../components/ui/Separator/Separator";
 import Badge from "../../components/ui/Badge/Badge";
 import Label from "../../components/form/Label/Label";
 import TeamEditor from "../../features/teams/TeamEditor";
-import { Listbox } from "@headlessui/react";
-import ChevronDownIcon from "../../components/icons/ChevronDownIcon";
 import SelectListbox from "../../components/form/SelectListbox/SelectListbox";
 
 export default function SetupPage({
@@ -26,6 +24,8 @@ export default function SetupPage({
   onClearAll,
   clampInt,
 }) {
+  const [confirmOpen, setConfirmOpen] = useState(false);
+
   const teamCountOptions = useMemo(
     () =>
       Array.from({ length: 64 - 2 + 1 }, (_, i) => {
@@ -69,10 +69,8 @@ export default function SetupPage({
         <Separator />
 
         <div className="grid md:grid-cols-2 gap-4">
-          {/* Teams */}
           <div className="grid gap-2">
             <Label>Anzahl Teams</Label>
-
             <SelectListbox
               value={selectedTeamCount}
               options={teamCountOptions}
@@ -83,14 +81,11 @@ export default function SetupPage({
                 }))
               }
             />
-
             <div className="text-xs text-slate-600">2–64 Teams.</div>
           </div>
 
-          {/* Group size */}
           <div className="grid gap-2">
             <Label>Gruppengröße</Label>
-
             <SelectListbox
               value={selectedGroupSize}
               options={groupSizeOptions}
@@ -101,7 +96,6 @@ export default function SetupPage({
                 }))
               }
             />
-
             <div className="text-xs text-slate-600">2–16 Teams pro Gruppe.</div>
           </div>
         </div>
@@ -123,18 +117,52 @@ export default function SetupPage({
         </div>
 
         <div className="flex flex-wrap gap-2">
-          <Button onClick={onGenerateGroups}>
-            {groupsExist ? "Gruppen speichern" : "Gruppen erzeugen"}
+          <Button onClick={onGenerateGroups} disabled={groupsExist}>
+            Gruppen erzeugen
           </Button>
-          <Button variant="ghost" onClick={onClearAll}>
-            Speicher leeren
+
+          <Button variant="danger" onClick={() => setConfirmOpen(true)}>
+            Alles zurücksetzen
           </Button>
         </div>
 
         {groupsExist ? (
           <div className="text-xs text-slate-600">
-            Hinweis: Klick auf „Gruppen speichern“ erzeugt Gruppen & Spiele neu
-            (bisherige Ergebnisse werden überschrieben).
+            Gruppen wurden bereits erzeugt. Um sie neu zu erstellen, bitte
+            „Alles zurücksetzen“ verwenden. Alle Namen und Ergebnisse werden damit gelöscht.
+          </div>
+        ) : null}
+
+        {/* Confirm Modal */}
+        {confirmOpen ? (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+            <div
+              className="absolute inset-0 bg-black/40"
+              onClick={() => setConfirmOpen(false)}
+            />
+            <div className="relative w-full max-w-md rounded-2xl bg-white shadow-xl border p-4 grid gap-3">
+              <div className="text-lg font-semibold">Alles zurücksetzen?</div>
+              <div className="text-sm text-slate-600">
+                Dadurch werden Setup, Teams, Gruppen, alle Ergebnisse und die
+                Platzierungsphase gelöscht. Das kann nicht rückgängig gemacht
+                werden.
+              </div>
+
+              <div className="flex items-center justify-end gap-2 pt-2">
+                <Button variant="ghost" onClick={() => setConfirmOpen(false)}>
+                  Abbrechen
+                </Button>
+                <Button
+                  variant="danger"
+                  onClick={() => {
+                    setConfirmOpen(false);
+                    onClearAll();
+                  }}
+                >
+                  Ja, alles löschen
+                </Button>
+              </div>
+            </div>
           </div>
         ) : null}
       </CardContent>
