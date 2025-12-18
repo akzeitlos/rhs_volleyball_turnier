@@ -41,7 +41,7 @@ export default function VolleyballTurnierTool() {
     state;
 
   return (
-    <div className="min-h-screen bg-slate-50 text-black">
+    <div className="min-h-screen text-black">
       <SideRail
         step={step}
         setStep={actions.setStep}
@@ -59,9 +59,6 @@ export default function VolleyballTurnierTool() {
               Volleyball Turnier Planer
             </div>
             <div className="text-sm text-slate-600">
-              Zeitspiele (Standard {RULES.matchDurationMinutes} Minuten): Sieg{" "}
-              {RULES.points.win}, Unentschieden {RULES.points.draw}, Niederlage{" "}
-              {RULES.points.loss}.
             </div>
           </div>
 
@@ -132,11 +129,6 @@ export default function VolleyballTurnierTool() {
               ),
             }}
           />
-
-          <div className="text-xs text-slate-500">
-            Navigation links. Daten bleiben gespeichert, bis du „Speicher leeren“
-            klickst.
-          </div>
         </div>
       </div>
     </div>

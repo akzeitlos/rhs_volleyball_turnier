@@ -32,16 +32,16 @@ export default function SetupPage({
       </CardHeader>
 
       <CardContent className="grid gap-4">
-        <div className="flex items-center justify-between gap-3">
+        {/* <div className="flex items-center justify-between gap-3">
           <div className="grid gap-1">
             <div className="font-medium">Auto-Speichern</div>
             <div className="text-xs text-slate-600">Speichert alles im Browser (localStorage).</div>
           </div>
           <Switch checked={useStorage} onCheckedChange={setUseStorage} />
-        </div>
+        </div> */}
 
         <div className="text-xs text-slate-600">
-          Zeitspiele (Standard {RULES.matchDurationMinutes} Minuten): Sieg {RULES.points.win}, Unentschieden {RULES.points.draw}, Niederlage {RULES.points.loss}.
+              Sieg: {RULES.points.win} Punkte, Unentschieden: {RULES.points.draw} Punkte, Niederlage: {RULES.points.loss} Punkte.
         </div>
 
         <Separator />

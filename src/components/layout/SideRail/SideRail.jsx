@@ -85,9 +85,6 @@ export default function SideRail({
 
       <div className="mt-auto" />
 
-      <div className="text-[10px] text-white/60 px-2 text-center">
-        {groups.length ? `${groups.length} Gruppen` : "noch keine Gruppen"}
-      </div>
     </div>
   );
 }
