@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-LightItalic.eot');
+    src: url('./assets/fonts/Geom-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-LightItalic.woff2') format('woff2'),
+        url('./assets/fonts/Geom-LightItalic.woff') format('woff'),
+        url('./assets/fonts/Geom-LightItalic.ttf') format('truetype'),
+        url('./assets/fonts/Geom-LightItalic.svg#Geom-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-Light.eot');
+    src: url('./assets/fonts/Geom-Light.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-Light.woff2') format('woff2'),
+        url('./assets/fonts/Geom-Light.woff') format('woff'),
+        url('./assets/fonts/Geom-Light.ttf') format('truetype'),
+        url('./assets/fonts/Geom-Light.svg#Geom-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-ExtraBoldItalic.eot');
+    src: url('./assets/fonts/Geom-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-ExtraBoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Geom-ExtraBoldItalic.woff') format('woff'),
+        url('./assets/fonts/Geom-ExtraBoldItalic.ttf') format('truetype'),
+        url('./assets/fonts/Geom-ExtraBoldItalic.svg#Geom-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-SemiBold.eot');
+    src: url('./assets/fonts/Geom-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-SemiBold.woff2') format('woff2'),
+        url('./assets/fonts/Geom-SemiBold.woff') format('woff'),
+        url('./assets/fonts/Geom-SemiBold.ttf') format('truetype'),
+        url('./assets/fonts/Geom-SemiBold.svg#Geom-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-Black.eot');
+    src: url('./assets/fonts/Geom-Black.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-Black.woff2') format('woff2'),
+        url('./assets/fonts/Geom-Black.woff') format('woff'),
+        url('./assets/fonts/Geom-Black.ttf') format('truetype'),
+        url('./assets/fonts/Geom-Black.svg#Geom-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-Italic.eot');
+    src: url('./assets/fonts/Geom-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-Italic.woff2') format('woff2'),
+        url('./assets/fonts/Geom-Italic.woff') format('woff'),
+        url('./assets/fonts/Geom-Italic.ttf') format('truetype'),
+        url('./assets/fonts/Geom-Italic.svg#Geom-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-Regular.eot');
+    src: url('./assets/fonts/Geom-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Geom-Regular.woff') format('woff'),
+        url('./assets/fonts/Geom-Regular.ttf') format('truetype'),
+        url('./assets/fonts/Geom-Regular.svg#Geom-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-BoldItalic.eot');
+    src: url('./assets/fonts/Geom-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-BoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Geom-BoldItalic.woff') format('woff'),
+        url('./assets/fonts/Geom-BoldItalic.ttf') format('truetype'),
+        url('./assets/fonts/Geom-BoldItalic.svg#Geom-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-MediumItalic.eot');
+    src: url('./assets/fonts/Geom-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-MediumItalic.woff2') format('woff2'),
+        url('./assets/fonts/Geom-MediumItalic.woff') format('woff'),
+        url('./assets/fonts/Geom-MediumItalic.ttf') format('truetype'),
+        url('./assets/fonts/Geom-MediumItalic.svg#Geom-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-ExtraBold.eot');
+    src: url('./assets/fonts/Geom-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-ExtraBold.woff2') format('woff2'),
+        url('./assets/fonts/Geom-ExtraBold.woff') format('woff'),
+        url('./assets/fonts/Geom-ExtraBold.ttf') format('truetype'),
+        url('./assets/fonts/Geom-ExtraBold.svg#Geom-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-Medium.eot');
+    src: url('./assets/fonts/Geom-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Geom-Medium.woff') format('woff'),
+        url('./assets/fonts/Geom-Medium.ttf') format('truetype'),
+        url('./assets/fonts/Geom-Medium.svg#Geom-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-Bold.eot');
+    src: url('./assets/fonts/Geom-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Geom-Bold.woff') format('woff'),
+        url('./assets/fonts/Geom-Bold.ttf') format('truetype'),
+        url('./assets/fonts/Geom-Bold.svg#Geom-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-BlackItalic.eot');
+    src: url('./assets/fonts/Geom-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-BlackItalic.woff2') format('woff2'),
+        url('./assets/fonts/Geom-BlackItalic.woff') format('woff'),
+        url('./assets/fonts/Geom-BlackItalic.ttf') format('truetype'),
+        url('./assets/fonts/Geom-BlackItalic.svg#Geom-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Geom';
+    src: url('./assets/fonts/Geom-SemiBoldItalic.eot');
+    src: url('./assets/fonts/Geom-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Geom-SemiBoldItalic.woff2') format('woff2'),
+        url('./assets/fonts/Geom-SemiBoldItalic.woff') format('woff'),
+        url('./assets/fonts/Geom-SemiBoldItalic.ttf') format('truetype'),
+        url('./assets/fonts/Geom-SemiBoldItalic.svg#Geom-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
